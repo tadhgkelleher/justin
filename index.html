@@ -3,146 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Justin Healy, an experienced live and studio drummer, known for his collaborations and teaching roles across the music industry.">
-    <title>Justin Healy</title>
+    <meta name="description" content="Justin Healy – Professional Drummer & Percussionist, available for live performances, studio work, and drum lessons.">
+    <title>Justin Healy | Drummer & Percussionist</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            line-height: 1.8;
-            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
         }
+
+        /* Header Section */
         header {
             position: relative;
+            height: 100vh;
+            background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            height: 80vh;
-            background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center/cover;
         }
-        header::after {
-            content: '';
-            position: absolute;
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-weight: 400;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            z-index: 100;
         }
-        header h1 {
-            position: relative;
-            font-size: 4rem;
-            font-weight: 600;
-            color: #f39c12;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-            margin: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        nav {
-            background: #121212;
-            padding: 1rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+
         nav a {
-            color: #f39c12;
+            color: #fff;
             text-decoration: none;
             margin: 0 1.5rem;
-            font-weight: 400;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
+
         nav a:hover {
-            color: #fff;
+            color: #f39c12;
         }
+
+        /* Main Sections */
         section {
-            padding: 4rem 2rem;
+            padding: 60px 20px;
             text-align: center;
         }
+
         h2 {
-            color: #f39c12;
             font-size: 2.5rem;
+            color: #f39c12;
             margin-bottom: 1rem;
         }
+
         p {
             font-size: 1rem;
-            margin: 1rem auto;
-            max-width: 600px;
+            max-width: 800px;
+            margin: 0 auto 2rem;
         }
-        .career div {
+
+        .career-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 2rem 0;
         }
-        .services img, .about img, .career img {
+
+        .career-item img {
             width: 50%;
             height: auto;
-            margin: 2rem auto;
-            display: block;
-            border-radius: 10px;
-            filter: grayscale(50%) contrast(1.1);
+            border-radius: 8px;
+            margin-right: 20px;
+            filter: grayscale(70%);
             transition: filter 0.3s;
         }
-        .services img:hover, .about img:hover, .career img:hover {
-            filter: grayscale(0%) contrast(1);
+
+        .career-item img:hover {
+            filter: grayscale(0);
         }
+
+        .career-item div {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .contact-form button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer */
         footer {
-            background: #121212;
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-            color: #808080;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Justin Healy</h1>
+        <div>
+            <h1>Justin Healy</h1>
+            <p>Professional Drummer & Percussionist | Available for Studio Work, Live Performances, & Drum Lessons</p>
+        </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
-        <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#career">Career</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="services" class="services">
-        <h2>Consultancy & Production</h2>
-        <p>Available for select studio and live collaborations, offering expertise in creating exceptional soundscapes.</p>
-        <img src="https://www.superprof.ie/blog/wp-content/uploads/2019/12/the-cost-of-recording.jpg" alt="Studio Production">
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Justin</h2>
+        <p>With over 25 years of experience as a professional drummer, Justin Healy has worked with some of the best artists in the music industry. Known for his versatility and precision, he is available for a range of music projects including studio recording, live performances, and drum lessons.</p>
     </section>
 
-    <section id="about" class="about">
-        <h2>The Rhythm Behind Iconic Sounds</h2>
-        <p>Recognized for his contributions to numerous iconic records and live performances, Justin Healy has shaped modern music with his versatile drumming.</p>
-        <img src="https://fanningsessions.wordpress.com/wp-content/uploads/2014/10/forgetmenots.jpg" alt="Forget Me Nots Band">
-    </section>
-
-    <section id="career" class="career">
+    <!-- Career Section -->
+    <section id="career">
         <h2>Career Highlights</h2>
-        <div>
+        <div class="career-item">
+            <img src="https://www.superprof.ie/blog/wp-content/uploads/2019/12/the-cost-of-recording.jpg" alt="Studio Performance">
+            <div>
+                <h3>Studio Work</h3>
+                <p>Justin has contributed to numerous hit records as a studio drummer, collaborating with top producers and artists across various genres.</p>
+            </div>
+        </div>
+        <div class="career-item">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Live Performance">
-            <p><strong>Television:</strong> Regular performances on *The Late Late Show* (RTE).</p>
-        </div>
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWi1t9CPFrkaJkL3hDeXoj_iaLoWbPPUziQ&s" alt="Golden Horde">
-            <p><strong>Collaborations:</strong> Worked with The Golden Horde, Mik Pyro & The Dublin Blues Cartel, and others.</p>
-        </div>
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Studio">
-            <p><strong>Studio Work:</strong> Experience as a studio assistant at Litton Lane Studios, Dublin.</p>
+            <div>
+                <h3>Live Performances</h3>
+                <p>He has performed live on major TV shows, including RTE's *The Late Late Show*, and played alongside high-profile bands and artists.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <p>For inquiries, bookings, or collaborations, email <a href="mailto:justinhealy@example.com" style="color: #f39c12; text-decoration: none;">justinhealy@example.com</a>.</p>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <p>Justin offers a variety of services, including:</p>
+        <ul>
+            <li>Live performances for gigs, festivals, and TV shows.</li>
+            <li>Studio recording sessions for bands and artists.</li>
+            <li>One-on-one drum tutoring and workshops for all skill levels.</li>
+        </ul>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you're interested in booking Justin for a project or want to get in touch for any inquiries, feel free to fill out the contact form below or email directly.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Justin Healy. All rights reserved.</p>
+        <p>&copy; 2024 Justin Healy | All Rights Reserved</p>
     </footer>
+
 </body>
 </html>
