@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Justin Healy – Professional Drummer & Percussionist, available for live performances, studio work, and drum lessons.">
     <title>Justin Healy | Drummer & Percussionist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: #fff;
             line-height: 1.6;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
 
         /* Header Section */
@@ -23,27 +24,42 @@
             height: 100vh;
             background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center;
             background-size: cover;
+            background-attachment: fixed;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 0 20px;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+            z-index: 1;
         }
 
         header h1 {
-            font-size: 5rem;
-            font-weight: 600;
+            font-size: 4rem;
+            font-weight: 700;
             text-transform: uppercase;
             margin: 0;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
         }
 
         header p {
             font-size: 1.5rem;
             margin-top: 1rem;
             font-weight: 400;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         /* Navigation Bar */
@@ -58,18 +74,21 @@
             z-index: 100;
             display: flex;
             justify-content: center;
+            transition: background-color 0.3s ease;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1.5rem;
+            margin: 0 2rem;
             font-size: 1.2rem;
-            transition: color 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         nav a:hover {
             color: #f39c12;
+            transform: scale(1.1);
         }
 
         /* Main Sections */
@@ -85,21 +104,23 @@
             margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             max-width: 900px;
             margin: 0 auto 2rem;
             line-height: 1.8;
         }
 
+        /* Career Section */
         .career-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 2.5rem 0;
-            transition: transform 0.3s ease-in-out;
+            margin: 3rem 0;
+            transition: transform 0.3s ease;
         }
 
         .career-item img {
@@ -112,7 +133,7 @@
         }
 
         .career-item img:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
             filter: grayscale(0);
         }
 
@@ -131,15 +152,15 @@
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
         }
 
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 12px;
+            padding: 14px;
             margin: 12px 0;
             border: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-size: 1rem;
             background-color: #f8f8f8;
             color: #333;
@@ -154,16 +175,17 @@
         .contact-form button {
             background-color: #f39c12;
             color: #fff;
-            padding: 12px 25px;
+            padding: 14px 30px;
             border: none;
             font-size: 1.2rem;
             cursor: pointer;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
         .contact-form button:hover {
             background-color: #e67e22;
+            transform: scale(1.05);
         }
 
         /* Footer */
