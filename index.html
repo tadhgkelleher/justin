@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Justin Healy – Professional Drummer & Percussionist, available for live performances, studio work, and drum lessons.">
     <title>Justin Healy | Drummer & Percussionist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -15,7 +15,6 @@
             color: #fff;
             line-height: 1.6;
             overflow-x: hidden;
-            scroll-behavior: smooth;
         }
 
         /* Header Section */
@@ -24,42 +23,28 @@
             height: 100vh;
             background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center;
             background-size: cover;
-            background-attachment: fixed;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 0 20px;
-            position: relative;
-        }
-
-        header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
-            z-index: 1;
+            filter: brightness(0.6);
         }
 
         header h1 {
-            font-size: 4rem;
-            font-weight: 700;
+            font-size: 6rem;
+            font-weight: 600;
             text-transform: uppercase;
             margin: 0;
-            z-index: 2;
-            text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+            text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
         }
 
         header p {
-            font-size: 1.5rem;
-            margin-top: 1rem;
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
             font-weight: 400;
-            z-index: 2;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
         }
 
         /* Navigation Bar */
@@ -74,21 +59,20 @@
             z-index: 100;
             display: flex;
             justify-content: center;
-            transition: background-color 0.3s ease;
+            font-weight: 600;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 2rem;
-            font-size: 1.2rem;
-            font-family: 'Montserrat', sans-serif;
-            transition: color 0.3s ease, transform 0.3s ease;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #f39c12;
-            transform: scale(1.1);
+            color: #c0c0c0;
         }
 
         /* Main Sections */
@@ -99,98 +83,95 @@
         }
 
         h2 {
-            font-size: 2.8rem;
-            color: #f39c12;
-            margin-bottom: 1.5rem;
+            font-size: 3rem;
+            color: #c0c0c0;
+            margin-bottom: 2rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 3px;
         }
 
         p {
             font-size: 1.2rem;
             max-width: 900px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 3rem;
             line-height: 1.8;
         }
 
-        /* Career Section */
         .career-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 3rem 0;
-            transition: transform 0.3s ease;
+            margin: 2.5rem 0;
+            transition: transform 0.3s ease-in-out;
         }
 
         .career-item img {
-            width: 45%;
+            width: 50%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
             margin-right: 20px;
             filter: grayscale(70%);
             transition: transform 0.3s ease, filter 0.3s ease;
         }
 
         .career-item img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             filter: grayscale(0);
         }
 
         .career-item div {
             max-width: 550px;
             text-align: left;
-            color: #ccc;
+            color: #ddd;
         }
 
         /* Contact Form */
         .contact-form {
-            background-color: #333;
+            background-color: #222;
             color: #fff;
             padding: 40px 20px;
             border-radius: 8px;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
         }
 
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 14px;
-            margin: 12px 0;
+            margin: 14px 0;
             border: none;
             border-radius: 6px;
             font-size: 1rem;
-            background-color: #f8f8f8;
-            color: #333;
+            background-color: #333;
+            color: #fff;
             transition: background-color 0.3s ease;
         }
 
         .contact-form input:focus, .contact-form textarea:focus {
-            background-color: #f39c12;
+            background-color: #444;
             outline: none;
         }
 
         .contact-form button {
-            background-color: #f39c12;
-            color: #fff;
-            padding: 14px 30px;
+            background-color: #c0c0c0;
+            color: #333;
+            padding: 12px 30px;
             border: none;
             font-size: 1.2rem;
             cursor: pointer;
-            border-radius: 6px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
 
         .contact-form button:hover {
-            background-color: #e67e22;
-            transform: scale(1.05);
+            background-color: #a0a0a0;
         }
 
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #222;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -198,12 +179,12 @@
         }
 
         footer a {
-            color: #f39c12;
+            color: #c0c0c0;
             text-decoration: none;
         }
 
         footer a:hover {
-            color: #e67e22;
+            color: #a0a0a0;
         }
 
         /* Keyframes for Animations */
@@ -215,11 +196,11 @@
         /* Responsive Styles */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 3.5rem;
+                font-size: 4.5rem;
             }
 
             header p {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
 
             .career-item {
@@ -228,7 +209,7 @@
             }
 
             .career-item img {
-                width: 80%;
+                width: 75%;
                 margin-bottom: 20px;
             }
         }
