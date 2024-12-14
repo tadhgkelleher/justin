@@ -11,7 +11,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background: linear-gradient(135deg, #121212, #2f2f2f);
             color: #fff;
             line-height: 1.6;
             overflow-x: hidden;
@@ -42,7 +42,7 @@
             align-items: center;
             text-align: center;
             padding: 0 20px;
-            filter: brightness(0.6);
+            filter: brightness(0.5);
         }
 
         header h1 {
@@ -51,6 +51,7 @@
             text-transform: uppercase;
             margin: 0;
             text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+            animation: fadeInHeader 1.5s ease-in-out;
         }
 
         header p {
@@ -58,6 +59,7 @@
             margin-top: 1.5rem;
             font-weight: 400;
             text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
+            animation: fadeInText 1.5s ease-in-out;
         }
 
         /* Navigation Bar */
@@ -73,6 +75,7 @@
             display: flex;
             justify-content: center;
             font-weight: 600;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         nav a {
@@ -117,6 +120,8 @@
             align-items: center;
             margin: 2.5rem 0;
             transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            animation: fadeInService 1s ease-out forwards;
         }
 
         .service-item img {
@@ -149,6 +154,11 @@
             max-width: 600px;
             margin: 0 auto;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form:hover {
+            background-color: #333;
         }
 
         .contact-form input, .contact-form textarea {
@@ -205,6 +215,21 @@
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
+        }
+
+        @keyframes fadeInHeader {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInService {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         /* Responsive Styles */
@@ -296,7 +321,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:info@justinhealy.com">Contact Us</a></p>
+        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:contact@justinhealy.com">contact@justinhealy.com</a></p>
     </footer>
 
 </body>
