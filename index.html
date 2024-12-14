@@ -11,9 +11,10 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1e1e1e;
+            background-color: #1a1a1a;
             color: #fff;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         /* Header Section */
@@ -27,23 +28,22 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            overflow: hidden;
+            padding: 0 20px;
         }
 
         header h1 {
-            font-size: 4.5rem;
+            font-size: 5rem;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-            letter-spacing: 2px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
         }
 
         header p {
             font-size: 1.5rem;
             margin-top: 1rem;
             font-weight: 400;
-            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
 
         /* Navigation Bar */
@@ -54,7 +54,7 @@
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
-            padding: 1.2rem 2rem;
+            padding: 1.5rem 2rem;
             z-index: 100;
             display: flex;
             justify-content: center;
@@ -63,145 +63,92 @@
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 2rem;
+            margin: 0 1.5rem;
             font-size: 1.2rem;
-            position: relative;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
             color: #f39c12;
         }
 
-        nav a::after {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #f39c12;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-
-        nav a:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
         /* Main Sections */
         section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
-            background-color: #2c3e50;
-            margin-bottom: 20px;
-            border-radius: 8px;
+            animation: fadeIn 1s ease-out;
         }
 
         h2 {
             font-size: 2.8rem;
             color: #f39c12;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         p {
-            font-size: 1.2rem;
-            max-width: 800px;
+            font-size: 1.1rem;
+            max-width: 900px;
             margin: 0 auto 2rem;
-            color: #ddd;
+            line-height: 1.8;
         }
 
-        /* Career Section */
         .career-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 3rem 0;
-            background-color: #34495e;
-            padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            margin: 2.5rem 0;
+            transition: transform 0.3s ease-in-out;
         }
 
         .career-item img {
-            width: 60%;
+            width: 45%;
             height: auto;
             border-radius: 8px;
             margin-right: 20px;
             filter: grayscale(70%);
-            transition: filter 0.3s, transform 0.3s;
+            transition: transform 0.3s ease, filter 0.3s ease;
         }
 
         .career-item img:hover {
-            filter: grayscale(0);
             transform: scale(1.05);
+            filter: grayscale(0);
         }
 
         .career-item div {
-            max-width: 500px;
+            max-width: 550px;
             text-align: left;
-            color: #fff;
-        }
-
-        .career-item div h3 {
-            font-size: 1.8rem;
-            color: #f39c12;
-        }
-
-        /* Quotes Section */
-        .quotes-section {
-            background-color: #1e1e1e;
-            padding: 40px 20px;
-            border-top: 4px solid #f39c12;
-        }
-
-        .quotes-section h2 {
-            color: #f39c12;
-            font-size: 2.8rem;
-        }
-
-        .quote-item {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #bbb;
-        }
-
-        .quote-item p {
-            font-size: 1.1rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .quote-item cite {
-            display: block;
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #f39c12;
+            color: #ccc;
         }
 
         /* Contact Form */
         .contact-form {
-            background-color: #34495e;
+            background-color: #333;
             color: #fff;
             padding: 40px 20px;
             border-radius: 8px;
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
 
         .contact-form input, .contact-form textarea {
             width: 100%;
             padding: 12px;
-            margin: 10px 0;
+            margin: 12px 0;
             border: none;
             border-radius: 4px;
             font-size: 1rem;
             background-color: #f8f8f8;
             color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            background-color: #f39c12;
+            outline: none;
         }
 
         .contact-form button {
@@ -212,7 +159,7 @@
             font-size: 1.2rem;
             cursor: pointer;
             border-radius: 4px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .contact-form button:hover {
@@ -225,14 +172,43 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            font-size: 1rem;
         }
 
-        footer p {
-            font-size: 1rem;
-            color: #bbb;
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #e67e22;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .career-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .career-item img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -251,7 +227,6 @@
         <a href="#about">About</a>
         <a href="#career">Career</a>
         <a href="#services">Services</a>
-        <a href="#quotes">Quotes</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -280,23 +255,6 @@
         </div>
     </section>
 
-    <!-- Quotes Section -->
-    <section id="quotes" class="quotes-section">
-        <h2>Inspirational Quotes</h2>
-        <div class="quote-item">
-            <p>"The rhythm of life is found in every beat, whether on stage or in the studio. Let the music guide you." </p>
-            <cite>- Justin Healy</cite>
-        </div>
-        <div class="quote-item">
-            <p>"A great drummer is not just about speed or technique, it's about feeling the groove and making it yours."</p>
-            <cite>- Justin Healy</cite>
-        </div>
-        <div class="quote-item">
-            <p>"Every song is a conversation between the drums and the rest of the band. You can't fake that connection."</p>
-            <cite>- Justin Healy</cite>
-        </div>
-    </section>
-
     <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
@@ -322,7 +280,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Justin Healy | All Rights Reserved</p>
+        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:info@justinhealy.com">Contact Us</a></p>
     </footer>
 
 </body>
