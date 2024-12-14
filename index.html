@@ -15,21 +15,22 @@
             color: #fff;
             line-height: 1.6;
             overflow-x: hidden;
+            background-image: url('https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8yOV9hZXN0aGV0aWNfc2ltcGxlX2xpbmVfY3JheW9uX2RyYXdpbmdfZG9vZGxlX180ZTFhMDRhMS01NWNjLTRiZWYtYTQ5NC1mMzVhOGQ3YTE0ZTZfMS5wbmc.png');
+            background-position: center center;
+            background-size: cover;
         }
 
-        /* Header Section */
         header {
             position: relative;
             height: 100vh;
-            background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center;
-            background-size: cover;
+            background: rgba(0, 0, 0, 0.6);
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 0 20px;
-            filter: brightness(0.6);
+            filter: brightness(0.7);
         }
 
         header h1 {
@@ -47,7 +48,6 @@
             text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
         }
 
-        /* Navigation Bar */
         nav {
             position: fixed;
             top: 0;
@@ -75,7 +75,6 @@
             color: #c0c0c0;
         }
 
-        /* Main Sections */
         section {
             padding: 80px 20px;
             text-align: center;
@@ -97,7 +96,6 @@
             line-height: 1.8;
         }
 
-        /* Service Item */
         .service-item {
             display: flex;
             justify-content: center;
@@ -126,7 +124,6 @@
             color: #ddd;
         }
 
-        /* Contact Form */
         .contact-form {
             background-color: #222;
             color: #fff;
@@ -170,7 +167,6 @@
             background-color: #a0a0a0;
         }
 
-        /* Footer */
         footer {
             background-color: #222;
             color: #fff;
@@ -188,13 +184,11 @@
             color: #a0a0a0;
         }
 
-        /* Keyframes for Animations */
         @keyframes fadeIn {
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 4.5rem;
@@ -218,7 +212,6 @@
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div>
             <h1>Justin Healy</h1>
@@ -226,20 +219,17 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Justin</h2>
-        <p>Justin Healy is a highly experienced music producer and consultant, specializing in creating innovative soundscapes, guiding musicians and bands through the production process, and offering expert advice on creative direction. He is available for studio production, consultation on music projects, and more.</p>
+        <p>Justin Healy is a highly experienced music producer and consultant, specializing in creating innovative soundscapes, guiding musicians and bands through the production process, and offering expert advice on creative direction. He has worked with some of the best names in the industry and is a world-class educator, dedicated to sharing his knowledge with the next generation of musicians.</p>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
         <p>Justin offers a range of services tailored to elevate your musical projects:</p>
@@ -260,32 +250,28 @@
             </div>
         </div>
 
-        <!-- Project Direction Section with the new image -->
         <div class="service-item">
             <img src="https://fanningsessions.wordpress.com/wp-content/uploads/2014/10/forgetmenots.jpg" alt="Project Direction">
             <div>
                 <h3>Project Direction</h3>
-                <p>For artists, bands, and producers looking to define the direction of their sound or take their projects to the next level, Justin offers tailored creative direction to ensure every element aligns with your artistic vision.</p>
+                <p>For artists, bands, and producers looking to define the direction of their sound or take their projects to the next level, Justin offers tailored creative direction to ensure every element aligns with your vision.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you're interested in working with Justin or learning more about his services, feel free to get in touch using the contact form below or email directly.</p>
-        <div class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <p>If you're ready to take your music career or project to the next level, get in touch today!</p>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-        </div>
+        </form>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:info@justinhealy.com">Contact Us</a></p>
+        <p>&copy; 2024 Justin Healy | <a href="#privacy">Privacy Policy</a></p>
     </footer>
-
 </body>
 </html>
