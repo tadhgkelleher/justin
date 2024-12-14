@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the world of Justin Healy, one of the most sought-after drummers in the music industry. With a career spanning decades, he has redefined live and studio drumming.">
+    <meta name="description" content="Discover Justin Healy, an experienced live and studio drummer, known for his collaborations and teaching roles across the music industry.">
     <title>Justin Healy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+            background-color: #121212;
             color: #e0e0e0;
+            line-height: 1.8;
             overflow-x: hidden;
         }
         header {
             position: relative;
             text-align: center;
-            height: 100vh;
+            height: 80vh;
             background: url('https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce0f6d_top-10-drumming-techniques-to-level-up-your-sound-header.jpeg') no-repeat center center/cover;
-            overflow: hidden;
         }
         header::after {
             content: '';
@@ -28,35 +28,25 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.6);
         }
         header h1 {
             position: relative;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 600;
             color: #f39c12;
-            text-shadow: 0 0 20px rgba(243, 156, 18, 0.8), 0 0 40px rgba(243, 156, 18, 0.5);
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
             margin: 0;
             top: 50%;
             transform: translateY(-50%);
-            animation: glow 2s infinite alternate;
-        }
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 20px rgba(243, 156, 18, 0.8), 0 0 40px rgba(243, 156, 18, 0.5);
-            }
-            to {
-                text-shadow: 0 0 30px rgba(243, 156, 18, 1), 0 0 50px rgba(243, 156, 18, 0.7);
-            }
         }
         nav {
-            background: rgba(18, 18, 18, 0.9);
+            background: #121212;
             padding: 1rem 0;
+            text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
         }
         nav a {
             color: #f39c12;
@@ -64,103 +54,45 @@
             margin: 0 1.5rem;
             font-weight: 400;
             font-size: 1rem;
-            position: relative;
         }
-        nav a:hover::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 2px;
-            background: #f39c12;
-            animation: underline 0.3s ease-in-out;
-        }
-        @keyframes underline {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
+        nav a:hover {
+            color: #fff;
         }
         section {
-            padding: 6rem 2rem;
+            padding: 4rem 2rem;
             text-align: center;
-            opacity: 0;
-            transform: translateY(50px);
-            animation: fadeInUp 1s ease forwards;
-        }
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         h2 {
             color: #f39c12;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
-            text-transform: uppercase;
-            font-family: 'Orbitron', sans-serif;
         }
         p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin: 1rem auto;
-            max-width: 700px;
-            line-height: 1.8;
+            max-width: 600px;
         }
-        img {
-            width: 70%;
+        .career div {
+            margin: 2rem 0;
+        }
+        .services img, .about img, .career img {
+            width: 50%;
             height: auto;
             margin: 2rem auto;
             display: block;
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: grayscale(50%) contrast(1.2);
+            border-radius: 10px;
+            filter: grayscale(50%) contrast(1.1);
+            transition: filter 0.3s;
         }
-        img:hover {
-            transform: scale(1.05);
-            filter: grayscale(0%) contrast(1.4);
+        .services img:hover, .about img:hover, .career img:hover {
+            filter: grayscale(0%) contrast(1);
         }
         footer {
-            background: #0d0d0d;
+            background: #121212;
             text-align: center;
             padding: 2rem 1rem;
             font-size: 0.9rem;
             color: #808080;
-            position: relative;
-        }
-        footer a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-shadow: 0 0 10px rgba(243, 156, 18, 0.8);
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            background: #f39c12;
-            color: #0d0d0d;
-            font-size: 1.5rem;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
         }
     </style>
 </head>
@@ -176,35 +108,41 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="services">
+    <section id="services" class="services">
         <h2>Consultancy & Production</h2>
-        <p>Available for select studio and live collaborations, Justin Healy offers refined expertise in crafting exceptional soundscapes.</p>
+        <p>Available for select studio and live collaborations, offering expertise in creating exceptional soundscapes.</p>
         <img src="https://www.superprof.ie/blog/wp-content/uploads/2019/12/the-cost-of-recording.jpg" alt="Studio Production">
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <h2>The Rhythm Behind Iconic Sounds</h2>
-        <p>Recognized as one of the most influential drummers, Justin has shaped the sound of numerous iconic records and live performances.</p>
+        <p>Recognized for his contributions to numerous iconic records and live performances, Justin Healy has shaped modern music with his versatile drumming.</p>
         <img src="https://fanningsessions.wordpress.com/wp-content/uploads/2014/10/forgetmenots.jpg" alt="Forget Me Nots Band">
     </section>
 
-    <section id="career">
+    <section id="career" class="career">
         <h2>Career Highlights</h2>
-        <p>From national television appearances to collaborations with legendary acts, Justin Healy's career is a testament to artistic excellence.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Live Performance">
-        <p><strong>Television:</strong> A regular on RTE's <em>The Late Late Show</em>, delivering unforgettable live performances.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWi1t9CPFrkaJkL3hDeXoj_iaLoWbPPUziQ&s" alt="Golden Horde">
-        <p><strong>Collaborations:</strong> Worked with The Golden Horde, Forget Me Nots, and Mik Pyro & the Dublin Blues Cartel.</p>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Live Performance">
+            <p><strong>Television:</strong> Regular performances on *The Late Late Show* (RTE).</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCWi1t9CPFrkaJkL3hDeXoj_iaLoWbPPUziQ&s" alt="Golden Horde">
+            <p><strong>Collaborations:</strong> Worked with The Golden Horde, Mik Pyro & The Dublin Blues Cartel, and others.</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Studio">
+            <p><strong>Studio Work:</strong> Experience as a studio assistant at Litton Lane Studios, Dublin.</p>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Get in Touch</h2>
-        <p>For inquiries, bookings, or collaborations, email <a href="mailto:justinhealy@example.com">justinhealy@example.com</a>.</p>
+        <p>For inquiries, bookings, or collaborations, email <a href="mailto:justinhealy@example.com" style="color: #f39c12; text-decoration: none;">justinhealy@example.com</a>.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Justin Healy. All rights reserved. | <a href="#services">Services</a> | <a href="#about">About</a> | <a href="#career">Career</a> | <a href="#contact">Contact</a></p>
-        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">&#8593;</button>
+        <p>&copy; 2024 Justin Healy. All rights reserved.</p>
     </footer>
 </body>
 </html>
