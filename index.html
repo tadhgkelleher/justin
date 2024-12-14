@@ -11,10 +11,9 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #f8f8f8;
+            color: #333;
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         /* Header Section */
@@ -28,22 +27,19 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 20px;
         }
 
         header h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0;
-            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
         }
 
         header p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-top: 1rem;
             font-weight: 400;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
 
         /* Navigation Bar */
@@ -52,74 +48,93 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #333;
             color: #fff;
-            padding: 1.5rem 2rem;
+            padding: 1rem 2rem;
             z-index: 100;
-            display: flex;
-            justify-content: center;
         }
 
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
+            font-size: 1.1rem;
         }
 
         nav a:hover {
-            color: #f39c12;
+            color: #7f8c8d; /* New hover color */
         }
 
         /* Main Sections */
         section {
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            animation: fadeIn 1s ease-out;
         }
 
         h2 {
-            font-size: 2.8rem;
-            color: #f39c12;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-size: 2.5rem;
+            color: #333; /* Neutral color */
+            margin-bottom: 1rem;
         }
 
         p {
-            font-size: 1.1rem;
-            max-width: 900px;
+            font-size: 1rem;
+            max-width: 800px;
             margin: 0 auto 2rem;
-            line-height: 1.8;
         }
 
         .career-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 2.5rem 0;
-            transition: transform 0.3s ease-in-out;
+            margin: 2rem 0;
         }
 
         .career-item img {
-            width: 45%;
+            width: 50%;
             height: auto;
             border-radius: 8px;
             margin-right: 20px;
             filter: grayscale(70%);
-            transition: transform 0.3s ease, filter 0.3s ease;
+            transition: filter 0.3s;
         }
 
         .career-item img:hover {
-            transform: scale(1.05);
             filter: grayscale(0);
         }
 
         .career-item div {
-            max-width: 550px;
+            max-width: 500px;
             text-align: left;
-            color: #ccc;
+        }
+
+        /* Quotes Section */
+        .quotes-section {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            border-top: 2px solid #333; /* Dark gray border */
+        }
+
+        .quotes-section h2 {
+            color: #333;
+            font-size: 2.5rem;
+        }
+
+        .quote-item {
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #555; /* Subtle gray text */
+        }
+
+        .quote-item p {
+            font-size: 1.1rem;
+        }
+
+        .quote-item cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #7f8c8d; /* Gray for citation */
         }
 
         /* Contact Form */
@@ -131,39 +146,31 @@
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
 
         .contact-form input, .contact-form textarea {
             width: 100%;
-            padding: 12px;
-            margin: 12px 0;
+            padding: 10px;
+            margin: 10px 0;
             border: none;
             border-radius: 4px;
             font-size: 1rem;
             background-color: #f8f8f8;
             color: #333;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form input:focus, .contact-form textarea:focus {
-            background-color: #f39c12;
-            outline: none;
         }
 
         .contact-form button {
-            background-color: #f39c12;
+            background-color: #333;
             color: #fff;
             padding: 12px 25px;
             border: none;
             font-size: 1.2rem;
             cursor: pointer;
             border-radius: 4px;
-            transition: background-color 0.3s ease;
         }
 
         .contact-form button:hover {
-            background-color: #e67e22;
+            background-color: #555; /* Darker gray for hover effect */
         }
 
         /* Footer */
@@ -172,43 +179,6 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            font-size: 1rem;
-        }
-
-        footer a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #e67e22;
-        }
-
-        /* Keyframes for Animations */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3.5rem;
-            }
-
-            header p {
-                font-size: 1.2rem;
-            }
-
-            .career-item {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .career-item img {
-                width: 80%;
-                margin-bottom: 20px;
-            }
         }
     </style>
 </head>
@@ -227,6 +197,7 @@
         <a href="#about">About</a>
         <a href="#career">Career</a>
         <a href="#services">Services</a>
+        <a href="#quotes">Quotes</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -255,6 +226,23 @@
         </div>
     </section>
 
+    <!-- Quotes Section -->
+    <section id="quotes" class="quotes-section">
+        <h2>Inspirational Quotes</h2>
+        <div class="quote-item">
+            <p>"The rhythm of life is found in every beat, whether on stage or in the studio. Let the music guide you." </p>
+            <cite>- Justin Healy</cite>
+        </div>
+        <div class="quote-item">
+            <p>"A great drummer is not just about speed or technique, it's about feeling the groove and making it yours."</p>
+            <cite>- Justin Healy</cite>
+        </div>
+        <div class="quote-item">
+            <p>"Every song is a conversation between the drums and the rest of the band. You can't fake that connection."</p>
+            <cite>- Justin Healy</cite>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services">
         <h2>Services</h2>
@@ -280,7 +268,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:info@justinhealy.com">Contact Us</a></p>
+        <p>&copy; 2024 Justin Healy | All Rights Reserved</p>
     </footer>
 
 </body>
