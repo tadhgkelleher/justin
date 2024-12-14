@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Justin Healy – One of the most successful Irish drummers, available for music production and consultation.">
+    <meta name="description" content="Justin Healy – Professional Drummer, Music Producer, and Consultant available for studio production, consultation, and creative direction.">
     <title>Justin Healy | Music Producer & Consultant</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -29,25 +29,22 @@
             align-items: center;
             text-align: center;
             padding: 0 20px;
-            filter: brightness(0.4);
+            filter: brightness(0.6);
         }
 
         header h1 {
-            font-size: 4rem;
+            font-size: 6rem;
             font-weight: 600;
             text-transform: uppercase;
             margin: 0;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+            text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
         }
 
         header p {
-            font-size: 1.4rem;
-            margin-top: 1rem;
+            font-size: 1.8rem;
+            margin-top: 1.5rem;
             font-weight: 400;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6);
         }
 
         /* Navigation Bar */
@@ -58,7 +55,7 @@
             width: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
-            padding: 1rem 2rem;
+            padding: 1.5rem 2rem;
             z-index: 100;
             display: flex;
             justify-content: center;
@@ -70,60 +67,152 @@
             text-decoration: none;
             margin: 0 2rem;
             font-size: 1.3rem;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #f1c40f;
+            color: #c0c0c0;
         }
 
-        /* About Section */
-        .about {
-            padding: 5rem 2rem;
-            background-color: #1a1a1a;
+        /* Main Sections */
+        section {
+            padding: 80px 20px;
             text-align: center;
+            animation: fadeIn 1s ease-out;
         }
 
-        .about h2 {
+        h2 {
             font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #f1c40f;
+            color: #c0c0c0;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
 
-        .about p {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+        p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto 3rem;
             line-height: 1.8;
-            color: #ccc;
         }
 
-        /* Call to Action */
-        .cta {
-            padding: 4rem 2rem;
+        /* Service Item */
+        .service-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2.5rem 0;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-item img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+            filter: grayscale(70%);
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .service-item img:hover {
+            transform: scale(1.05);
+            filter: grayscale(0);
+        }
+
+        .service-item div {
+            max-width: 550px;
+            text-align: left;
+            color: #ddd;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 14px 0;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
             background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            background-color: #444;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #c0c0c0;
+            color: #333;
+            padding: 12px 30px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #a0a0a0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
             text-align: center;
+            padding: 20px;
+            font-size: 1rem;
         }
 
-        .cta h3 {
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta a {
-            color: #f1c40f;
-            font-size: 1.3rem;
+        footer a {
+            color: #c0c0c0;
             text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
         }
 
-        .cta a:hover {
-            color: #fff;
+        footer a:hover {
+            color: #a0a0a0;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 4.5rem;
+            }
+
+            header p {
+                font-size: 1.4rem;
+            }
+
+            .service-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .service-item img {
+                width: 75%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -133,29 +222,69 @@
     <header>
         <div>
             <h1>Justin Healy</h1>
-            <p>One of the most successful Irish drummers, available for music production and consultation. Collaborating with some of the greatest artists on the planet.</p>
+            <p>Music Producer, Consultant, & Drummer | Available for Studio Production, Consulting, & Creative Direction</p>
         </div>
     </header>
 
     <!-- Navigation -->
     <nav>
-        <a href="#">Home</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about">
         <h2>About Justin</h2>
-        <p>Justin Healy is a world-renowned drummer and music producer with extensive experience across various genres. Over the years, he has worked with a roster of global music legends, contributing his signature sound to a diverse range of projects. Now, Justin is available for music production and consulting services, offering his expertise to help you elevate your musical projects.</p>
+        <p>Justin Healy is a highly experienced music producer and consultant, specializing in creating innovative soundscapes, guiding musicians and bands through the production process, and offering expert advice on creative direction. He is available for studio production, consultation on music projects, and more.</p>
     </section>
 
-    <!-- Call to Action -->
-    <section id="contact" class="cta">
-        <h3>Ready to Work Together?</h3>
-        <p>Whether you're looking for a producer, drummer, or consultant, Justin is available for collaboration. Get in touch today.</p>
-        <a href="mailto:contact@justinhealy.com">Contact Justin</a>
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <p>Justin offers a range of services tailored to elevate your musical projects:</p>
+        
+        <div class="service-item">
+            <img src="https://www.superprof.ie/blog/wp-content/uploads/2019/12/the-cost-of-recording.jpg" alt="Studio Production">
+            <div>
+                <h3>Studio Production</h3>
+                <p>With extensive experience in the studio, Justin can help bring your vision to life, guiding you through every step of the production process—from pre-production to mixing and mastering.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu4RQJPHGGyZ7yqdCH109kJFvVsVJS5efttw&s" alt="Creative Consulting">
+            <div>
+                <h3>Creative Consulting</h3>
+                <p>Justin offers expert guidance in all aspects of music production and artist development, from songwriting and arrangement to overall project strategy. His goal is to help artists and producers realize their full potential.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="https://example.com/consultation-image.jpg" alt="Project Direction">
+            <div>
+                <h3>Project Direction</h3>
+                <p>For artists, bands, and producers looking to define the direction of their sound or take their projects to the next level, Justin offers tailored creative direction to ensure every element aligns with your artistic vision.</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you're interested in working with Justin or learning more about his services, feel free to get in touch using the contact form below or email directly.</p>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Justin Healy | All Rights Reserved | <a href="mailto:info@justinhealy.com">Contact Us</a></p>
+    </footer>
 
 </body>
 </html>
